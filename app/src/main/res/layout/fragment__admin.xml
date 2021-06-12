@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Admin">
+    <TextView
+        android:id="@+id/tv_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin pannel"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#A8A6A6"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="20dp"></TextView>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_admin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <TextView
+            android:id="@+id/title_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Newsfeed section"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:background="#444D62"
+            android:textColor="#FFFF"
+            android:textStyle="italic"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_circle"
+        android:layout_width="300dp"
+        android:layout_below="@id/title_news"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA">
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/admin"
+
+             android:scaleType="fitXY"
+
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/img_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_circle"
+        android:textColorHint="#A8A6A6"
+        android:textColor="#000"
+        android:hint="Enter Event name/title"
+        android:gravity="center"/>
+        <EditText
+            android:id="@+id/img_descriptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_name"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#A8A6A6"
+            android:textColor="#000"
+            android:hint="Descriptions manditory field "
+            android:gravity="center"/>
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_descriptions"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/cus_btn"
+
+        android:text="upload"
+        android:textColor="#DC3F51B5"/>
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/img_descriptions"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/cus_btn"
+        android:text="select"
+        android:textColor="#DC3F51B5"
+        android:layout_marginBottom="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home section"
+                android:gravity="center"
+                android:background="#444D62"
+                android:textColor="#FFFF"
+                android:textStyle="italic"/>
+            <EditText
+                android:id="@+id/et_feed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="feed here"/>
+            <EditText
+                android:id="@+id/et_links"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="links here"/>
+            <Button
+                android:id="@+id/btnhome_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="upload"
+                android:textColor="#DC3F51B5"
+                android:background="@drawable/cus_btn"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/title_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:text="message service"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#444D62"
+            android:textColor="#FFFF"
+            android:textStyle="italic"/>
+        <LinearLayout
+            android:id="@+id/lin_msg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="100dp"
+
+            android:layout_below="@id/title_msg">
+        <Button
+            android:id="@+id/btn_1year"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="10dp"
+            android:enabled="false"
+
+
+            android:background="@drawable/year_btn1"
+            android:text="1\nyear"/>
+            <Button
+                android:id="@+id/btn_2year"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:textSize="10dp"
+                android:enabled="false"
+
+                android:layout_gravity="center"
+                android:background="@drawable/year_btn1"
+                android:text="2\nyear"/>
+            <Button
+                android:id="@+id/btn_3year"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+
+                android:textSize="10dp"
+                android:background="@drawable/year_btn1"
+                android:text="3\nyear"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/lin_msg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Placement"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#444D62"
+                android:textColor="#FFFF"
+                android:textStyle="italic"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Placement Testominals"
+    android:textColor="@color/black"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/et_placement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="enter the link for image"/>
+            <Button
+                android:id="@+id/btn_placement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:text="upload"
+                android:textColor="#DC3F51B5"
+                android:background="@drawable/cus_btn"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Placement records"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/et_yearplacement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="Year of Placement record"/>
+            <EditText
+                android:id="@+id/et_datasheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="Data sheet link"/>
+         <EditText
+             android:id="@+id/et_placestud"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:layout_marginTop="10dp"
+             android:hint="students image link "/>
+            <Button
+                android:id="@+id/btn_placerecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_btn"
+                android:text="upload"
+                android:textColor="#DC3F51B5"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#444D62" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+        
+    </ScrollView>
+
+
+
+</RelativeLayout>

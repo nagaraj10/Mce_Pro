@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardElevation="7dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:text="hello"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/tv_message"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_quotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#1E3C68"
+android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="“Education scales you up to a new pinnacle of strength and success”"
+                    android:textSize="10sp"/>
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="We strive hard to excel in academics using innovative teaching methods and instil sustainable leadership in the minds of young budding professionals. We follow the path of our Chairman who has been instrumental in making a niche in the field of education. Our students come from diverse backgrounds and we are determined to give a holistic view of learning through an interactive learning process. We are fortunate to have a team of highly committed teaching faculty to ensure the learning ambience of our students is accomplished.
+
+Our UG and PG students have secured university ranks in the Anna University Examinations, which really makes us feel proud of our students and their mettle. Majority of our students are placed in reputed globally acclaimed companies as well as in government sectors. I am proud to say that we toil to attain pinnacle of success as envisioned by our Chairman.
+
+We look forward to build long lasting relationship with you."
+                        android:textSize="10sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/director"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_toRightOf="@id/tv_message"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tv_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF9900"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:text="– Mrs. Jayanthi Prabhakaran"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

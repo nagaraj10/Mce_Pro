@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingLeft="10dp"
+
+    android:gravity="bottom"
+    android:background="@drawable/gradient_bg">
+    <ImageView
+        android:id="@+id/img_mce"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mce"
+        android:paddingTop="5dp"
+        android:scaleType="fitXY"
+        android:contentDescription="Mce"/>
+    <TextView
+        android:id="@+id/mce_title"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_toRightOf="@id/img_mce"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:text= "Meenakshi College\nof Engineering"
+        android:layout_marginLeft="5dp"
+        android:textAppearance= "@style/TextAppearance.AppCompat.Body1" />
+    <TextView
+        android:id="@+id/approve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@id/mce_title"
+        android:layout_toRightOf="@id/img_mce"
+        android:text="(Approved by AICTE)"
+        android:textColor="@color/yellow"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@id/approve"
+        android:layout_toRightOf="@id/img_mce"
+        android:text="Counselling code: 1509"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFF"/>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placement Records"
+        android:layout_marginLeft="10dp"
+        android:textColor="#1E3C68"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="#D8D1D1"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyc_placementrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

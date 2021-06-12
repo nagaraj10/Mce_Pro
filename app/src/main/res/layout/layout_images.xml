@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="8dp"
+        android:elevation="9dp"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/ripple"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/currenttime"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="serif-monospace"
+                android:textColor="#687EF4"
+                android:textSize="10sp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:textColor="#687EF4"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/currenttime"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="Name"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loader"
+                android:layout_below="@id/textViewName" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/line"/>
+</LinearLayout>

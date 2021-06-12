@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4DCE7"
+    tools:context=".Community">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_rel">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyc_chats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<RelativeLayout
+    android:id="@+id/bottom_rel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_alignParentBottom="true">
+    <EditText
+        android:id="@+id/chat_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:paddingLeft="10dp"
+
+        android:hint="Type a message"
+
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/chat_et"/>
+</RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="25dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#808080">
+        <Button
+            android:id="@+id/chat_snd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:background="@drawable/send_icon"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

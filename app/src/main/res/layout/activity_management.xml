@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".Management_Activity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:background="@drawable/v3"
+                app:layout_collapseMode="parallax"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:title="Management &amp; Governing council"
+                android:background="@null"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+             />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="#1E3C68"
+    android:textSize="20sp"
+    android:text="The Management"
+   />
+
+
+
+                <TextView
+                    android:id="@+id/tv_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="10sp"
+                    android:text="The college is run by a well-structured management system that has the welfare and progress of the students and the college as its prime pursuit. A Governing Council, a Managing Committee and a Technical Advisory Committee help the effective management and administration of the college. The governing council sets the policies and programmes for the college and monitors the progress.\nThe technical advisory committee gives recommendations in respect of academic programmes and facilities while the managing committee carries out the recommendations of the two in every detail."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Objectives"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#1E3C68"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:layout_marginRight="15dp"
+            android:text="To introduce a fair, impartial and consistent mechanism for redressal of various issues faced by the students/faculty/non-teaching staff.\n\nTo ensure that grievances are resolved promptly, neutrally and in complete confidentiality.\n\nTo uphold the dignity of the institution by promoting cordial student-teacher relationship function."/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyc_management"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_anchor="@id/appbarlayout"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="25dp">
+        <ImageView
+            android:id="@+id/tool_eimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/mcelogo"/>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

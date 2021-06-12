@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".Activity_Image">
+    <include
+        android:id="@+id/tool"
+        layout="@layout/mcetool"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/tool"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_just"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#1E1E1E"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Event title:"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:textColor="#F32F2F"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/tv_just"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/dated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_just"
+            android:textColor="#1E1E1E"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Dated on:"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:textColor="#F32F2F"
+            android:layout_toRightOf="@id/dated"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_title"
+            android:gravity="end"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"></TextView>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/line"/>
+    <ImageView
+        android:id="@+id/exe_img"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/view"
+
+        android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/exe_img"
+            android:textColor="#1E1E1E"
+            android:text="Description:"/>
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/exe_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+      android:layout_marginRight="20dp"
+            android:background="@drawable/download"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_below="@id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1E1E1E"
+            android:gravity="center"
+            android:autoLink="web"
+            android:textIsSelectable="true"
+            android:clickable="true"
+            android:text="=no decsription found"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="10dp">
+
+        </TextView>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

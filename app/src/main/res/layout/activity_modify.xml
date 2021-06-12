@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Modify_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/mcetool"
+            layout="@layout/mcetool"/>
+    <EditText
+        android:id="@+id/sql_upname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#676464"
+        android:background="@drawable/edittext_cus"
+        android:textColor="#000"
+        android:gravity="center"
+        android:hint="update/delete name"/>
+    <EditText
+        android:id="@+id/sql_updepart"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext_cus"
+        android:textColorHint="#676464"
+        android:textColor="#000"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:hint="update/delete Department"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:background="@drawable/cus_btn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerHorizontal="true"
+
+            android:text="clear"/>
+        <Button
+            android:id="@+id/sql_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cus_btn"
+            android:text="Update"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:background="#676464"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Absent"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/cus_btn"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/cus_btn"
+                android:text="Late" />
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+        <EditText
+            android:id="@+id/et_cusmsg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="For Custom messages"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:gravity="center"
+            android:textSize="15dp"
+
+            android:background="@drawable/normal_et"
+            android:textColorHint="#676464"
+            android:textColor="#000"/>
+        <Button
+            android:id="@+id/btn_cusmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_below="@id/et_cusmsg"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/cus_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:text="send custom msg"/>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

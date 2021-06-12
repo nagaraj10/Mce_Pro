@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placement Assistance"
+        android:gravity="center"
+        android:background="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+
+        android:textStyle="bold"
+        android:textColor="#FFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vision"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#000"
+                android:textColor="#FFFF"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="The Meenakshi College of Engineering will be a world leader in the integration of teaching and learning, advancement of the knowledge base through research and scholarship, and leadership in service and outreach. Equipping the students with relevant and conceptualized professional skills and guiding them towards a bright future and career all around the world with the values of – Sincerity, Hard Work and Justice."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mission"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/black"
+                android:textColor="#FFFF"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="To achieve 100% placement for students through dedication, attitude and complete involvement is our mission. Placement Cell arranges and coordinates various programmes that aim at moulding the students so as to meet the industry expectations in career building and in turn bring laurels to the parent institution. The Placement Cell, guided by a set of rules and principles, strives to maintain good relationship with industries."/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:weightSum="2"
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="Faculty"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:text="The Placement and Training Department is functioning under the leadership of Senior Professors supported by Placement Officer and Department Coordinators with strong commitment to equip the students with necessary skills expected by Industry. A full time expert faculty with a specialization in counselling assists students to realize their true potential and hidden talent for development as excellent professional."/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placement Activities"
+        android:layout_marginTop="40dp"
+
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/right_icon"
+        android:text="Organizing training sessions in making the student community employable and to meet the corporate expectations."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/right_icon"
+        android:text="Promoting career counselling through guidance lecture programmes by suitable corporate representatives."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"
+
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/right_icon"
+        android:text="
+Maintaining updated database, job profiles, and recruitment patterns of the companies which help to analyze and prepare the mindset of the students. The Placement Cell has an active file of database with an ample record of corporate world, which will be updated continuously."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/right_icon"
+        android:text="Helping every student to define his/her career objective through individual expert counselling."/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Infrastructure and Facilities"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/right_icon"
+      android:text="Well Equipped Placement Cell."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/right_icon"
+        android:text="Fully Air-conditioned and acoustically designed Meeting Halls to conduct Training and Pre-Placement Meetings / Briefings."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/right_icon"
+        android:text="Well furnished / Air-conditioned Hi-Tech Auditorium and Seminar Halls."/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Placement Key Contact"
+    android:textColor="@color/black"
+    android:layout_marginTop="40dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/img_placement"
+        android:layout_width="200dp"
+android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Mr.N.Bharathi Raja  M.Tech.,"
+        android:textColor="#216088"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:textSize="10sp"
+        android:textStyle="bold"
+        android:text="Placement Officer"/>
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+      android:textStyle="bold"
+
+            android:text="9677153101"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:text="mceplacement2020@gmail.com" />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placement Coordinators Contacts"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/details"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"/>
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

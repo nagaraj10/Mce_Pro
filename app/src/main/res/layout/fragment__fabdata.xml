@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message service 3rd year"
+            android:textSize="20dp"
+            android:textColor="#5A5959"
+            android:gravity="center"
+            android:fontFamily="sans-serif-smallcaps"/>
+        <EditText
+            android:id="@+id/sql_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/title"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:textColorHint="#676464"
+            android:background="@drawable/edittext_cus"
+            android:gravity="center"
+            android:hint="Name"/>
+        <EditText
+            android:id="@+id/sql_depart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="#676464"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/sql_name"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:background="@drawable/edittext_cus"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:hint="Contact num"/>
+
+
+
+
+        <Button
+            android:id="@+id/btn_sqladd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cus_btn"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:layout_below="@id/sql_depart"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="10dp"
+            android:text="add"/>
+
+
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-2dp"
+
+
+        android:src="@drawable/close"/>
+</RelativeLayout>

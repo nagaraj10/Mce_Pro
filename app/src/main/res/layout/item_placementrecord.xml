@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="7dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D0F3BD41">
+            <TextView
+                android:id="@+id/tv_placeyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:text="Placement record"/>
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF"
+                android:layout_below="@id/tv_placeyear"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tv_datasheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placement Data - Download"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/v1"/>
+            <ImageView
+                android:id="@+id/p_imgdownload"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/download_cloud"
+                android:layout_below="@id/v1"
+                android:layout_marginTop="5dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF"
+                android:layout_below="@id/tv_datasheet"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tv_ps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/v2"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Placement Students"/>
+            <ImageView
+                android:id="@+id/stud_place"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+               android:scaleType="fitXY"
+                android:layout_below="@id/tv_ps"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/v1"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

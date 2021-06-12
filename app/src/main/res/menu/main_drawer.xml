@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+  <group android:checkableBehavior="single">
+      <item
+          android:id="@+id/Home"
+          android:title="Home"
+          
+          android:icon="@drawable/home"/>
+      <item
+          android:id="@+id/Events"
+          android:title="Events"
+          android:icon="@drawable/events"/>
+      <item
+          android:id="@+id/Admin"
+          android:title="Admin"
+          android:icon="@drawable/admin"/>
+
+      <item
+          android:id="@+id/placement"
+          android:title="Placement"
+          android:icon="@drawable/placement_icon"/>
+      <item
+          android:id="@+id/community"
+          android:title="Community"
+          android:icon="@drawable/chat_icon"/>
+      <item
+          android:id="@+id/more"
+          android:title="Official"
+          android:icon="@drawable/www"/>
+
+  </group>
+    <item android:title="About">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/management"
+                    android:title="Management"
+                    android:icon="@drawable/management"/>
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Results/Internals">
+    <menu>
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/portal1"
+                android:title="Portal-I"
+                android:icon="@drawable/result_icon"/>
+        <item
+            android:id="@+id/portal2"
+            android:title="Portal-II"
+            android:icon="@drawable/result_icon"/>
+
+
+    </group>
+    </menu>
+    </item>
+
+
+
+   <item android:title="Contact us">
+       <menu>
+           <item
+               android:id="@+id/contact"
+               android:title="contact us"
+               android:icon="@drawable/contact"/>
+       </menu>
+
+   </item>
+
+</menu>
